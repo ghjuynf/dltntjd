@@ -5,8 +5,14 @@ const token = process.env.token;
 
 client.on("ready", () => {
   console.log("Oh yes");
-    client.user.setPresence({game : { name : 공포영화는 무서워" }, status: "dnd"})
-});
+    client.user.setPresence({
+      status: "dnd",
+      activity: {
+          name: "공포영화는 무서워",
+          type: "PLAYING"
+      }
+    })
+);
 
 
 client.on("message", (msg) => {
