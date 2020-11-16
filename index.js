@@ -12,7 +12,7 @@ client.on("ready", () => {
           type: "PLAYING"
       }
     })
-);
+});
 
 
 client.on("message", (msg) => {
