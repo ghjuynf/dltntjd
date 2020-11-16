@@ -1,4 +1,3 @@
-const { SSL_OP_SSLEAY_080_CLIENT_DH_BUG } = require("constants");
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const prefix = "==";
@@ -6,8 +5,9 @@ const token = process.env.token;
 
 client.on("ready", () => {
   console.log("Oh yes");
-    client.user.setActivity("오늘은 수요일이에오", {type:"PLAYING"})
+    client.user.setPresence({game : { name : 공포영화는 무서워" }, status: "dnd"})
 });
+
 
 client.on("message", (msg) => {
   if (msg.author.bot || !msg.content.startsWith(prefix)) return;
