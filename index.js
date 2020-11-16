@@ -3411,4 +3411,4 @@ client.on("message", (msg) => {
   }
 });
 
-client.login("NzU4MjAxNzU3Njk1MjEzNTk4.X2rgaQ.p3fpYNPiC_5pvzuWYXJbeD4TcoQ");
+client.login(token);
