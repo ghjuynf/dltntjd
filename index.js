@@ -2506,7 +2506,7 @@ client.on("message", (msg) => {
               var day = "수요일";
               timeTable();
               msg.channel.send("영어");
-              msg.channel.send("박효진선생님");
+              msg.channel.send("엄선생님");
               msg.channel.send(
                 "https://us02web.zoom.us/j/9583380291?pwd=ZThzQlMzc0ZSMjZITG9kbWt2NGs3UT095"
               );
@@ -2563,7 +2563,7 @@ client.on("message", (msg) => {
               var day = "화요일";
               timeTable();
               msg.channel.send("영어");
-              msg.channel.send("박효진선생님");
+              msg.channel.send("준선생님");
               msg.channel.send(
                 "https://us02web.zoom.us/j/9583380291?pwd=ZThzQlMzc0ZSMjZITG9kbWt2NGs3UT095"
               );
@@ -2686,7 +2686,7 @@ client.on("message", (msg) => {
               var day = "월요일";
               timeTable();
               msg.channel.send("영어");
-              msg.channel.send("박효진선생님");
+              msg.channel.send("식선생님");
               msg.channel.send(
                 "https://us02web.zoom.us/j/9583380291?pwd=ZThzQlMzc0ZSMjZITG9kbWt2NGs3UT095"
               );
