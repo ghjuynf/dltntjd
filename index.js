@@ -8,7 +8,7 @@ client.on("ready", () => {
     client.user.setPresence({
       status: "dnd",
       activity: {
-          name: "공포영화는 무서워",
+          name: "무엇을 해볼까요",
           type: "PLAYING"
       }
     })
