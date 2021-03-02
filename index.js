@@ -1,13 +1,14 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const prefix = "==";
+var token = process.env.token;
 
 client.on("ready", () => {
   console.log("Oh yes");
     client.user.setPresence({
       status: "dnd",
       activity: {
-          name: "반 추가하고 싶으신분은 이쑤썽#8029으로 줌 링크 보내주세여",
+          name: "반 추가하고 싶으신분은 이쑤썽#8029으로 자기반 줌 링크 보내주세여",
           type: "PLAYING"
       }
     })
@@ -1010,5 +1011,5 @@ function First_Nogada(a, b, c){
         return "invalid";
     }
   }
-  client.login("NzU4MjAxNzU3Njk1MjEzNTk4.X2rgaQ.x8-A75CnSV9BJRi_7hBn1UAIBEo");
+  client.login(token);
  
