@@ -983,27 +983,27 @@ function First_Nogada(a, b, c){
 
   function Third_Nogada(a, b, c){
     switch(Second_Nogada(a, b, c)){
-      case "2,3반 = 안현아선생님, 6,8,9반 = 강현주선생님":
+      case "1,2,3반 = 안현아선생님, 6,8,9반 = 강현주선생님":
         return 'https://zoom.us/j/7094608456?pwd=cGtQU3NqK3lmOUd0OFpPUldHNnc1UT09 \n // https://zoom.us/j/9990031320?pwd=Q01IaVJYeHBRUjBWbHptemp1dGFnQT09';
-      case "2,3반 = 김병재선생님, 6,8,9반 = 이준서선생님":
+      case "1,2,3반 = 김병재선생님, 6,8,9반 = 이준서선생님":
         return 'https://zoom.us/j/7594714613?pwd=UEFQTE01SFZRYWcxYUhPS05NOFZZUT09 \n // https://us02web.zoom.us/j/8687258653?pwd=Q0ZzclJUVVRkaGI0Z2x4R3ZrNXdxQT09';
-      case "2,3반 = 김시용선생님, 6,8,9반 = 김향숙선생님":
+      case "1,2,3반 = 김시용선생님, 6,8,9반 = 김향숙선생님":
         return 'https://us02web.zoom.us/j/2521617249?pwd=bkRkVkVha2Jrb3JQNVFrNnFNNVNyUT09 \n // https://zoom.us/j/3121363871?pwd=RnhkNEhZbkpQQmtVOUFSUWd3YzRhZz09';
-      case "2,3반 = 서진화선생님, 6,8,9반 = 곽지영선생님":
+      case "1,2,3반 = 서진화선생님, 6,8,9반 = 곽지영선생님":
         return 'https://zoom.us/j/4282444812?pwd=NjZDekViWlJjREpiR0t0dkIwaC9wdz09 \n // https://zoom.us/j/2029525829?pwd=dlphNVZCekdMSkdoeFpjSEp1eUF6dz09';
-      case "2,3,6,8,9반 = 송혜경선생님":
+      case "1,2,3,6,8,9반 = 송혜경선생님":
         return 'https://zoom.us/j/8721927402?pwd=cTJyKzBQUXRMb3owNFU1bkM1VllrUT09';
-      case "2,3반 = 강지현선생님, 6,8,9반 = 윤혜진선생님":
+      case "1,2,3반 = 강지현선생님, 6,8,9반 = 윤혜진선생님":
         return 'https://zoom.us/j/6297632473?pwd=dmI0aEVZc3N1Q29lejVjU1dqTGt0Zz09 \n // https://zoom.us/j/3553534243?pwd=RkNWSWNKT000d2ZWNHpwZE9sang0QT09';
-      case "2,3,6,8,9반 = 권민수선생님":
+      case "1,2,3,6,8,9반 = 권민수선생님":
         return 'https://zoom.us/j/9132661200?pwd=cEx2NVFnRmJmSFRjT2ZhRC95NUR2QT09';
-      case "2,3반 = 김승미선생님, 6,8,9반 = 민솔선생님":
+      case "1,2,3반 = 김승미선생님, 6,8,9반 = 민솔선생님":
         return 'https://zoom.us/j/6737903648?pwd=blBGd0o5Q3VJTGVhRk14eVNIWHJVdz09 \n // https://us02web.zoom.us/j/3071954981?pwd=dXhMZkk2eE9LbkR3eHpuQnoxNUx1dz09';
-      case "2,3,6,8,9반 = 김혜란선생님":
+      case "1,2,3,6,8,9반 = 김혜란선생님":
         return 'https://us04web.zoom.us/j/5415952858?pwd=OUdFeWdCVkZyVzhudmNaVU1CRVZxZz09';
-      case "2,3,6,8,9반 = 고은정선생님":
+      case "1,2,3,6,8,9반 = 고은정선생님":
         return 'https://zoom.us/j/6064581563?pwd=SmJ3M0lEaFhGMTRsR0NKWkQxbVdOQT09';
-      case "2,3반 = 진현호선생님, 6반 = 이상윤선생님, 8,9반 = 홍영상선생님":
+      case "1,2,3반 = 진현호선생님, 6반 = 이상윤선생님, 8,9반 = 홍영상선생님":
         return 'https://zoom.us/j/4473861954?pwd=NFRwaHZQVTNaU3YwVTRvcjBZQUJaQT09 \n // https://zoom.us/j/4465173047?pwd=dnpvUnE4MkF0YlFBMFpHMTE4ZFQ5UT09 \n // https://zoom.us/j/5810363056?pwd=UkhTV3BZRmt6RHhRcTl6OFp1a1pSUT09';
       case "free":
         return '자율시간입니다. 자세한건 담임선생님 공지를 따라주세요.';
