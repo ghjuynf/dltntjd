@@ -1,4 +1,4 @@
-/*const Discord = require("discord.js");
+const Discord = require("discord.js");
 const client = new Discord.Client();
 const prefix = "==";
 var token = process.env.token;
@@ -20,7 +20,10 @@ function tt(a, b, c) {
         return "정확한 값을 입력해주세요."
     }
     else if(First_Nogada(a, b, c) == "None"){
-        return "6교시 혹은 7교시 수업이 존재하지 "
+        return "6교시 혹은 7교시 수업이 존재하지 않음"
+    }
+    else if(Third_Nogada(a, b, c) == "Sport"){
+      return "스포츠에요"
     }
     return `${a}반 ${date[b-1]}요일 ${c}교시 수업\n${First_Nogada(a, b, c)}\n${Second_Nogada(a, b, c)}\n${Third_Nogada(a, b, c)}`
 }
@@ -47,7 +50,7 @@ client.on('message', msg => {
   function doNotExist7th() {
     return msg.channel.send("7교시 수업이 존재하지 않음");
   }*/
-/*function First_Nogada(a, b, c){
+function First_Nogada(a, b, c){
     switch(a){
       case "1":
         switch(b){
@@ -979,6 +982,16 @@ client.on('message', msg => {
         return '1,2,3,6,8,9반 = 고은정선생님';
       case "체육":
         return '1,2,3반 = 진현호선생님, 6반 = 이상윤선생님, 8,9반 = 홍영상선생님';
+      case "스/과":
+        return '스포츠 또는 과학입니다. 과학일땐 뒤에 링크를 타주세요.';
+      case "스/사":
+        return '스포츠 또는 사회입니다. 사회일땐 뒤에 링크를 타주세요.';
+      case "스/음":
+        return '스포츠 또는 음악입니다. 음악일땐 뒤에 링크를 타주세요.';
+      case "스/체":
+        return '스포츠 또는 체육입니다. 체육일땐 뒤에 링크를 타주세요.';
+      case "스포3":
+        return '스포츠입니다.'
       default:
         return "invalid";
     }
@@ -1010,9 +1023,18 @@ client.on('message', msg => {
         return 'https://zoom.us/j/4473861954?pwd=NFRwaHZQVTNaU3YwVTRvcjBZQUJaQT09 \n // https://zoom.us/j/4465173047?pwd=dnpvUnE4MkF0YlFBMFpHMTE4ZFQ5UT09 \n // https://zoom.us/j/5810363056?pwd=UkhTV3BZRmt6RHhRcTl6OFp1a1pSUT09';
       case "free":
         return '자율시간입니다. 자세한건 담임선생님 공지를 따라주세요.';
+      case "스포츠 또는 과학입니다. 과학일땐 뒤에 링크를 타주세요.":
+        return '링크가 없습니다. 이쑤썽#8029로 자신의 반 줌 링크를 전부 보내주세요!';
+      case "스포츠 또는 사회입니다. 사회일땐 뒤에 링크를 타주세요.":
+        return 'https://zoom.us/j/4282444812?pwd=NjZDekViWlJjREpiR0t0dkIwaC9wdz09 // (서진화선생님)';
+      case "스포츠 또는 음악입니다. 음악일땐 뒤에 링크를 타주세요.":
+        return 'https://zoom.us/j/9132661200?pwd=cEx2NVFnRmJmSFRjT2ZhRC95NUR2QT09';
+      case "스포츠 또는 체육입니다. 체육일땐 뒤에 링크를 타주세요.":
+        return '2반 = https://zoom.us/j/4473861954?pwd=NFRwaHZQVTNaU3YwVTRvcjBZQUJaQT09 \n // 6반 = https://zoom.us/j/4465173047?pwd=dnpvUnE4MkF0YlFBMFpHMTE4ZFQ5UT09';
+      case "스포츠입니다.":
+        return "Sport";
       default:
         return "invalid";
     }
   }
   client.login(token);
- 
