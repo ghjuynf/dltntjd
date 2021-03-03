@@ -17,7 +17,10 @@ client.on("ready", () => {
 date = ["월", "화", "수", "목", "금", "토", "일"] //부가 어레이
 function tt(a, b, c) {
     if (First_Nogada(a, b, c) == "invalid") {
-        return "Invalid argument."
+        return "정확한 값을 입력해주세요."
+    }
+    else if(First_Nogada(a, b, c) == "None"){
+        return "6교시 혹은 7교시 수업이 존재하지 "
     }
     return `${a}반 ${date[b-1]}요일 ${c}교시 수업\n${First_Nogada(a, b, c)}\n${Second_Nogada(a, b, c)}\n${Third_Nogada(a, b, c)}`
 }
