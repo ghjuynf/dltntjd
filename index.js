@@ -50,6 +50,8 @@ client.on('message', msg => {
   function doNotExist7th() {
     return msg.channel.send("7교시 수업이 존재하지 않음");
   }*/
+
+
 function First_Nogada(a, b, c){
     switch(a){
       case "1":
