@@ -8,7 +8,7 @@ client.on("ready", () => {
     client.user.setPresence({
       status: "dnd",
       activity: {
-          name: "반 추가하고 싶으신분은 이쑤썽#8029으로 자기반 줌 링크 보내주세여",
+          name: "반 추가하고 싶으신분은 #8029으로 자기반 줌 링크 보내주세여",
           type: "PLAYING"
       }
     })
