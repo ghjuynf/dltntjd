@@ -32,9 +32,6 @@ function tt(a, b, c) {
     if (args.length == 2){
     return `${a}반 ${date[b-1]}요일 ${c}교시 수업\n${First_Nogada(a, b, c)}\n${Second_Nogada(a, b, c)}\n${Third_Nogada(a, b, c)}`
     }
-    else if(args.length == 1){
-      return ``
-    }
 }
 
 client.on('message', msg => {
