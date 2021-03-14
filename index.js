@@ -1869,7 +1869,7 @@ function Additional_Nogada(a, b, c){
 }
 }
 
-  function Second_Nogada(a, b, c){
+function Second_Nogada(a, b, c){
     switch(Additional_Nogada(a, b, c)){
       case "앞반국어":
         return '안현아선생님';
@@ -1929,7 +1929,7 @@ function Additional_Nogada(a, b, c){
   }
 
   function Third_Nogada(a, b, c){
-    switch(Additional_Nogada(a, b, c)){
+    switch(Second_Nogada(a, b, c)){
       case "안현아선생님":
         return 'https://zoom.us/j/7094608456?pwd=cGtQU3NqK3lmOUd0OFpPUldHNnc1UT09';
       case "강현주선생님":
