@@ -34,9 +34,7 @@ function tt(a, b, c) {
     else if(Third_Nogada(a, b, c) == "Sport"){
       return "스포츠에요"
     }
-    else if(typeof(a) == "number" && typeof(b) == "number" && typeof(c) == "number"){
       return `${a}반 ${date[b-1]}요일 ${c}교시 수업\n${First_Nogada(a, b, c)}\n${Second_Nogada(a, b, c)}\n${Third_Nogada(a, b, c)}`
-    }
 }
 
 client.on('message', msg => {
