@@ -16,10 +16,10 @@ client.on("ready", () => {
 
 date = ["월", "화", "수", "목", "금", "토", "일"] //부가 어레이
 function tt(a, b, c) {
-    if(args.length == 1){
+    /*if(args.length == 1){
       return `${a}반에 ${b}시간 ${Fourth_Nogada(a, b)}`;
-    }
-    else if (First_Nogada(a, b, c) == "invalid") {
+    }*/
+    if (First_Nogada(a, b, c) == "invalid") {
         return "정확한 값을 입력해주세요."
     }
     else if(First_Nogada(a, b, c) == "자율"){
@@ -2047,7 +2047,7 @@ function Third_Nogada(a, b, c){
     }
   }
 
-function Fourth_Nogada(a, b) {
+/*function Fourth_Nogada(a, b) {
   switch(a){
     case "1":
       switch(b){
@@ -2103,6 +2103,6 @@ function Fourth_Nogada(a, b) {
         case "조례":
            return '김혜란선생님\nhttps://us04web.zoom.us/j/5415952858?pwd=OUdFeWdCVkZyVzhudmNaVU1CRVZxZz09';
       }      
-  }
+  }*/
 }
   client.login(token);
