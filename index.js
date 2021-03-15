@@ -2103,6 +2103,6 @@ function Third_Nogada(a, b, c){
         case "조례":
            return '김혜란선생님\nhttps://us04web.zoom.us/j/5415952858?pwd=OUdFeWdCVkZyVzhudmNaVU1CRVZxZz09';
       }      
-  }*/
-}
+  }
+}*/
   client.login(token);
