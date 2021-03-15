@@ -19,7 +19,7 @@ function tt(a, b, c) {
     if (First_Nogada(a, b, c) == "invalid") {
         return "정확한 값을 입력해주세요."
     }
-    else if(First_Nogada(a, b, c) == ""){
+    else if(First_Nogada(a, b, c) == "자율"){
       return "자율시간입니다. 자세한건 담임선생님 공지를 따라주세요."
     }
     else if(First_Nogada(a, b, c) == "doesntexist"){
