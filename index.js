@@ -19,6 +19,9 @@ function tt(a, b, c) {
     if (First_Nogada(a, b, c) == "invalid") {
         return "정확한 값을 입력해주세요."
     }
+    else if(First_Nogada(a, b, c) == "free"){
+      return "자율시간입니다. 자세한건 담임선생님 공지를 따라주세요."
+    }
     else if(First_Nogada(a, b, c) == "doesntexist"){
       return "시간표 정보가 없습니다."
     }
@@ -1849,6 +1852,7 @@ function Additional_Nogada(a, b, c){
               case "2":
                 return "중어";
               case "3":
+                
                 return "뒷반미술";
               case "4":
                 return "뒷반체육";
