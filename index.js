@@ -16,10 +16,10 @@ client.on("ready", () => {
 
 date = ["월", "화", "수", "목", "금", "토", "일"] //부가 어레이
 function tt(a, b, c) {
-    /*if(args.length == 1){
-      return `${a}반에 ${b}시간 ${Fourth_Nogada(a, b)}`;
-    }*/
-    if (First_Nogada(a, b, c) == "invalid") {
+    if(typeof(b) == "string"&& typeof(c) == "undefined"){
+      return `${a}반\n${b}\n${Fourth_Nogada(a, b)}`
+    }
+    else if (First_Nogada(a, b, c) == "invalid") {
         return "정확한 값을 입력해주세요."
     }
     else if(First_Nogada(a, b, c) == "자율"){
@@ -34,7 +34,9 @@ function tt(a, b, c) {
     else if(Third_Nogada(a, b, c) == "Sport"){
       return "스포츠에요"
     }
+    else{
       return `${a}반 ${date[b-1]}요일 ${c}교시 수업\n${First_Nogada(a, b, c)}\n${Second_Nogada(a, b, c)}\n${Third_Nogada(a, b, c)}`
+    }
 }
 
 client.on('message', msg => {
@@ -64,7 +66,6 @@ function First_Nogada(a, b, c){
       case "1":
         switch(b){
           case "1":
-          case "월":
             switch(c){
               case "1":
                 return "영어";
@@ -84,7 +85,6 @@ function First_Nogada(a, b, c){
                 return "invalid";
             }
           case "2":
-          case "화":
             switch(c){
               case "1":
                 return "수학";
@@ -104,7 +104,6 @@ function First_Nogada(a, b, c){
                 return "invalid";
             }
             case "3":
-            case "수":
               switch(c){
                 case "1":
                   return "수학";
@@ -124,7 +123,6 @@ function First_Nogada(a, b, c){
                   return "invalid";
               }
             case "4":
-            case "목":
               switch(c){
                 case "1":
                   return "체육";
@@ -144,7 +142,6 @@ function First_Nogada(a, b, c){
                   return "invalid";
               }
             case "5":
-            case "금":
               switch(c){
                 case "1":
                   return "중어";
@@ -169,7 +166,6 @@ function First_Nogada(a, b, c){
       case "2":
         switch(b){
           case "1":
-          case "월":
             switch(c){
               case "1":
                 return "수학";
@@ -189,7 +185,6 @@ function First_Nogada(a, b, c){
                 return "invalid";
             }
           case "2":
-          case "화":
             switch(c){
               case "1":
                 return "사회";
@@ -209,7 +204,6 @@ function First_Nogada(a, b, c){
                 return "invalid";
             }
             case "3":
-            case "수":
               switch(c){
                 case "1":
                   return "사회";
@@ -229,7 +223,6 @@ function First_Nogada(a, b, c){
                    return "invalid";
               }
             case "4":
-            case "목":
               switch(c){
                 case "1":
                   return "수학";
@@ -249,7 +242,6 @@ function First_Nogada(a, b, c){
                   return "invalid";
               }
             case "5":
-            case "금":
               switch(c){
                 case "1":
                   return "영어";
@@ -274,7 +266,6 @@ function First_Nogada(a, b, c){
       case "3":
         switch(b){
           case "1":
-          case "월":
             switch(c){
               case "1":
                 return "체육";
@@ -294,7 +285,6 @@ function First_Nogada(a, b, c){
                 return "invalid";
             }
           case "2":
-          case "화":
             switch(c){
               case "1":
                 return "체육";
@@ -314,7 +304,6 @@ function First_Nogada(a, b, c){
                 return "invalid";
             }
             case "3":
-            case "수":
               switch(c){
                 case "1":
                   return "정보";
@@ -334,7 +323,6 @@ function First_Nogada(a, b, c){
                   return "invalid";
               }
             case "4":
-            case "목":
               switch(c){
                 case "1":
                   return "사회";
@@ -354,7 +342,6 @@ function First_Nogada(a, b, c){
                   return "invalid";
               }
             case "5":
-            case "금":
               switch(c){
                 case "1":
                   return "수학";
@@ -379,7 +366,6 @@ function First_Nogada(a, b, c){
       case "4":
         switch(b){
           case "1":
-          case "월":
             switch(c){
               case "1":
                 return "중어";
@@ -399,7 +385,6 @@ function First_Nogada(a, b, c){
                 return "invalid";
             }
           case "2":
-          case "화":
             switch(c){
               case "1":
                 return "국어";
@@ -419,7 +404,6 @@ function First_Nogada(a, b, c){
                 return "invalid";
             }
             case "3":
-            case "수":
               switch(c){
                 case "1":
                   return "미술";
@@ -439,7 +423,6 @@ function First_Nogada(a, b, c){
                   return "invalid";
               }
             case "4":
-            case "목":
               switch(c){
                 case "1":
                   return "국어";
@@ -459,7 +442,6 @@ function First_Nogada(a, b, c){
                   return "invalid";
               }
             case "5":
-            case "금":
               switch(c){
                 case "1":
                   return "과학";
@@ -484,7 +466,6 @@ function First_Nogada(a, b, c){
       case "5":
         switch(b){
           case "1":
-          case "월":
             switch(c){
               case "1":
                 return "역사";
@@ -504,7 +485,6 @@ function First_Nogada(a, b, c){
                 return "invalid";
             }
           case "2":
-          case "화":
             switch(c){
               case "1":
                 return "사회";
@@ -524,7 +504,6 @@ function First_Nogada(a, b, c){
                 return "invalid";
             }
             case "3":
-            case "수":
               switch(c){
                 case "1":
                   return "체육";
@@ -544,7 +523,6 @@ function First_Nogada(a, b, c){
                   return "invalid";
               }
             case "4":
-            case "목":
               switch(c){
                 case "1":
                   return "수학";
@@ -564,7 +542,6 @@ function First_Nogada(a, b, c){
                   return "invalid";
               }
             case "5":
-            case "금":
               switch(c){
                 case "1":
                   return "국어";
@@ -589,7 +566,6 @@ function First_Nogada(a, b, c){
       case "6":
         switch(b){
           case "1":
-          case "월":
             switch(c){
               case "1":
                 return "정보";
@@ -609,7 +585,6 @@ function First_Nogada(a, b, c){
                 return "invalid";
             }
           case "2":
-          case "화":
             switch(c){
               case "1":
                 return "영어";
@@ -629,7 +604,6 @@ function First_Nogada(a, b, c){
                 return "invalid";
             }
             case "3":
-            case "수":
               switch(c){
                 case "1":
                   return "수학";
@@ -649,7 +623,6 @@ function First_Nogada(a, b, c){
                   return "invalid";
               }
             case "4":
-            case "목":
               switch(c){
                 case "1":
                   return "체육";
@@ -669,7 +642,6 @@ function First_Nogada(a, b, c){
                   return "invalid";
               }
             case "5":
-            case "금":
               switch(c){
                 case "1":
                   return "사회";
@@ -694,7 +666,6 @@ function First_Nogada(a, b, c){
       case "7":
         switch(b){
           case "1":
-          case "월":
             switch(c){
               case "1":
                 return "영어";
@@ -714,7 +685,6 @@ function First_Nogada(a, b, c){
                 return "invalid";
             }
           case "2":
-          case "화":
             switch(c){
               case "1":
                 return "수학";
@@ -734,7 +704,6 @@ function First_Nogada(a, b, c){
                 return "invalid";
             }
             case "3":
-            case "수":
               switch(c){
                 case "1":
                   return "수학";
@@ -752,7 +721,6 @@ function First_Nogada(a, b, c){
                   return "None";
               }
             case "4":
-            case "목":
               switch(c){
                 case "1":
                   return "사회";
@@ -772,7 +740,6 @@ function First_Nogada(a, b, c){
                   return "invalid";
               }
             case "5":
-            case "금":
               switch(c){
                 case "1":
                   return "정보";
@@ -797,7 +764,6 @@ function First_Nogada(a, b, c){
       case "8":
         switch(b){
           case "1":
-          case "월":
             switch(c){
               case "1":
                 return "과학";
@@ -817,7 +783,6 @@ function First_Nogada(a, b, c){
                 return "invalid";
             }
           case "2":
-          case "화":
             switch(c){
               case "1":
                 return "과학";
@@ -837,7 +802,6 @@ function First_Nogada(a, b, c){
                 return "invalid";
             }
             case "3":
-            case "수":
               switch(c){
                 case "1":
                   return "국어";
@@ -857,7 +821,6 @@ function First_Nogada(a, b, c){
                   return "invalid";
               }
             case "4":
-            case "목":
               switch(c){
                 case "1":
                   return "영어";
@@ -877,7 +840,6 @@ function First_Nogada(a, b, c){
                   return "invalid";
               }
             case "5":
-            case "금":
               switch(c){
                 case "1":
                   return "체육";
@@ -902,7 +864,6 @@ function First_Nogada(a, b, c){
       case "9":
         switch(b){
           case "1":
-          case "월":
             switch(c){
               case "1":
                 return "음악";
@@ -922,7 +883,6 @@ function First_Nogada(a, b, c){
                 return "invalid";
             }
           case "2":
-          case "화":
             switch(c){
               case "1":
                 return "역사";
@@ -942,7 +902,6 @@ function First_Nogada(a, b, c){
                 return "invalid";
             }
             case "3":
-            case "수":
               switch(c){
                 case "1":
                   return "영어";
@@ -962,7 +921,6 @@ function First_Nogada(a, b, c){
                   return "invalid";
               }
             case "4":
-            case "목":
               switch(c){
                 case "1":
                   return "과학";
@@ -982,7 +940,6 @@ function First_Nogada(a, b, c){
                   return "invalid";
               }
             case "5":
-            case "금":
               switch(c){
                 case "1":
                   return "영어";
@@ -1014,7 +971,6 @@ function Additional_Nogada(a, b, c){
     case "1":
       switch(b){
         case "1":
-        case "월":
           switch(c){
             case "1":
               return "앞반영어";
@@ -2045,62 +2001,80 @@ function Third_Nogada(a, b, c){
     }
   }
 
-/*function Fourth_Nogada(a, b) {
+function Fourth_Nogada(a, b) {
   switch(a){
     case "1":
       switch(b){
         case "종례":
         case "조례":
           return '안현아선생님\nhttps://zoom.us/j/7094608456?pwd=cGtQU3NqK3lmOUd0OFpPUldHNnc1UT09';
+        case "시간표":
+          return '월 : 영어 국어 체육 역사 정보 정보 자율\n화 : 수학 국어 과학 사회 영어 음악 미술\n수 : 수학 과학 스/사 스/사 중어\n목 : 체육 과학 영어 국어 수학 사회 역사\n금 : 중어 영어 국어 수학 체육 과학';
       }
     case "2":
       switch(b){
         case "종례":
         case "조례":
           return '진현호선생님\nhttps://zoom.us/j/4473861954?pwd=NFRwaHZQVTNaU3YwVTRvcjBZQUJaQT09';
+        case "시간표":
+          return '월 : 수학 중어 과학 영어 국어 미술 자율\n화 : 사회 음악 수학 국어 체육 과학 영어\n수 : 사회 역사 스/체 스/체 국어\n목 : 수학 역사 사회 체육 국어 영어 과학\n 금: 영어 과학 수학 중어 정보 정보';
       }
     case "3":
       switch(b){
         case "종례":
         case "조례":
-        return '김시용선생님\nhttps://us02web.zoom.us/j/2521617249?pwd=bkRkVkVha2Jrb3JQNVFrNnFNNVNyUT09';
+          return '김시용선생님\nhttps://us02web.zoom.us/j/2521617249?pwd=bkRkVkVha2Jrb3JQNVFrNnFNNVNyUT09';
+        case "시간표":
+          return '월 : 체육 영어 국어 수학 중어 역사 자율\n화 : 체육 영어 미술 과학 사회 수학 국어\n수 : 정보 정보 영어 스포3 과학\n목 : 사회 중어 수학 과학 영어 체육 국어\n금 : 수학 사회 음악 과학 국어 역사';
       }
     case "4":
       switch(b){
         case "종례":
         case "조례":
           return '강지현선생님\nhttps://zoom.us/j/6297632473?pwd=dmI0aEVZc3N1Q29lejVjU1dqTGt0Zz09';
+        case "시간표":
+          return '월 : 중어 과학 역사 음악 수학 체육 자율\n화 : 국어 사회 영어 수학 정보 정보 과학\n수 : 미술 영어 국어 스포3 수학\n목 : 국어 영어 체육 사회 과학 수학 중어\n금 : 과학 체육 역사 사회 영어 국어';
       }
     case "5":
       switch(b){
         case "종례":
         case "조례":
           return '송혜경선생님\nhttps://zoom.us/j/8721927402?pwd=cTJyKzBQUXRMb3owNFU1bkM1VllrUT09';
+        case "시간표":
+          return '월 : 역사 사회 영어 체육 과학 수학 자율\n화 : 사회 중어 미술 영어 국어 과학 수학\n수 : 체육 국어 스/과 스/과 영어\n목 : 수학 국어 영어 과학 사회 정보 정보\n금 : 국어 역사 체육 음악 중어 수학';
       }
     case "6":
       switch(b){
         case "종례":
         case "조례":
           return '이준서선생님\nhttps://us02web.zoom.us/j/8687258653?pwd=Q0ZzclJUVVRkaGI0Z2x4R3ZrNXdxQT09';
+        case "시간표":
+          return '월 : 정보 정보 국어 과학 체육 음악 자율\n화 : 영어 사회 과학 국어 수학 중어 역사\n수 : 역사 영어 스/체 스/체 수학\n목 : 체육 사회 중어 수학 영어 과학 국어\n금 : 사회 국어 과학 수학 미술 영어';
       } 
     case "7":
       switch(b){
         case "종례":
         case "조례":
           return '고은정선생님\nhttps://zoom.us/j/6064581563?pwd=SmJ3M0lEaFhGMTRsR0NKWkQxbVdOQT09';
+        case "시간표":
+          return '월 : 영어 과학 음악 체육 수학 중어 자율\n화 : 수학 역사 국어 중어 사회 과학 영어\n수 : 수학 국어 스/과 스/과 체육\n목 : 사회 수학 국어 체육 과학 역사 영어\n금 : 정보 정보 사회 국어 영어 미술';
       }
     case "8":
       switch(b){
         case "종례":
         case "조례":
-            return '곽지영선생님\nhttps://zoom.us/j/2029525829?pwd=dlphNVZCekdMSkdoeFpjSEp1eUF6dz09';
+          return '곽지영선생님\nhttps://zoom.us/j/2029525829?pwd=dlphNVZCekdMSkdoeFpjSEp1eUF6dz09';
+        case "시간표":
+          return '월 : 과학 수학 사회 국어 체육 영어 자율\n화 : 과학 정보 정보 수학 역사 영어 국어\n수 : 국어 중어 스/음 스/음 사회\n목 : 영어 체육 과학 역사 중어 국어 수학\n금 : 체육 수학 영어 미술 사회 과학';
       }
     case "9":
       switch(b){
         case "종례":
         case "조례":
-           return '김혜란선생님\nhttps://us04web.zoom.us/j/5415952858?pwd=OUdFeWdCVkZyVzhudmNaVU1CRVZxZz09';
+          return '김혜란선생님\nhttps://us04web.zoom.us/j/5415952858?pwd=OUdFeWdCVkZyVzhudmNaVU1CRVZxZz09';
+        case "시간표":
+          return '월 : 음악 체육 수학 영어 과학 국어 자율\n화 : 역사 수학 영어 사회 과학 국어 중어\n수 : 영어 수학 사회 스포3 역사\n목 : 과학 정보 정보 국어 수학 사회 체육\n금 : 영어 중어 미술 체육 과학 국어';
       }      
   }
-}*/
-  client.login(token);
+}
+client.login(token);
