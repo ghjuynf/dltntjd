@@ -315,7 +315,7 @@ function First_Nogada(a, b, c){
                 case "3":
                   return "영어";
                 case "4":
-                  return "스포3";
+                  return "스포";
                 case "5":
                   return "과학";
                 case "6":
@@ -415,7 +415,7 @@ function First_Nogada(a, b, c){
                 case "3":
                   return "국어";
                 case "4":
-                  return "스포3";
+                  return "스포";
                 case "5":
                   return "수학";
                 case "6":
@@ -913,7 +913,7 @@ function First_Nogada(a, b, c){
                 case "3":
                   return "사회";
                 case "4":
-                  return "스포3";
+                  return "스포";
                 case "5":
                   return "역사";
                 case "6":
@@ -1220,7 +1220,7 @@ function Additional_Nogada(a, b, c){
               case "3":
                 return "앞반영어";
               case "4":
-                return "스포3";
+                return "스포";
               case "5":
                 return "앞반과학";
               case "6":
@@ -1320,7 +1320,7 @@ function Additional_Nogada(a, b, c){
               case "3":
                 return "앞반국어";
               case "4":
-                return "스포3";
+                return "스포";
               case "5":
                 return "앞반수학";
               case "6":
@@ -1818,7 +1818,7 @@ function Additional_Nogada(a, b, c){
               case "3":
                 return "뒷반사회";
               case "4":
-                return "스포3";
+                return "스포";
               case "5":
                 return "역사";
               case "6":
@@ -1932,7 +1932,7 @@ function Second_Nogada(a, b, c){
         return '스포츠 또는 체육입니다. 체육일땐 뒤에 링크를 타주세요.';//앞반 
       case "6반스/체":
         return '스포츠 또는 체육입니다. 체육일땐 뒤에 링크를 타주세요';//뒷반(뒷반 앞반 구분하려고 . 없앰)
-      case "스포3":
+      case "스포":
         return '스포츠입니다.'
       default:
         return "invalid";
@@ -2032,7 +2032,7 @@ function Fourth_Nogada(a, b) {
         case "조례":
           return '김시용선생님\nhttps://us02web.zoom.us/j/2521617249?pwd=bkRkVkVha2Jrb3JQNVFrNnFNNVNyUT09';
         case "시간표":
-          return '월 : 체육 영어 국어 수학 중어 역사 자율\n화 : 체육 영어 미술 과학 사회 수학 국어\n수 : 정보 정보 영어 스포3 과학\n목 : 사회 중어 수학 과학 영어 체육 국어\n금 : 수학 사회 음악 과학 국어 역사';
+          return '월 : 체육 영어 국어 수학 중어 역사 자율\n화 : 체육 영어 미술 과학 사회 수학 국어\n수 : 정보 정보 영어 스포 과학\n목 : 사회 중어 수학 과학 영어 체육 국어\n금 : 수학 사회 음악 과학 국어 역사';
         default:
           return 'invalid';
       }
@@ -2042,7 +2042,7 @@ function Fourth_Nogada(a, b) {
         case "조례":
           return '강지현선생님\nhttps://zoom.us/j/6297632473?pwd=dmI0aEVZc3N1Q29lejVjU1dqTGt0Zz09';
         case "시간표":
-          return '월 : 중어 과학 역사 음악 수학 체육 자율\n화 : 국어 사회 영어 수학 정보 정보 과학\n수 : 미술 영어 국어 스포3 수학\n목 : 국어 영어 체육 사회 과학 수학 중어\n금 : 과학 체육 역사 사회 영어 국어';
+          return '월 : 중어 과학 역사 음악 수학 체육 자율\n화 : 국어 사회 영어 수학 정보 정보 과학\n수 : 미술 영어 국어 스포 수학\n목 : 국어 영어 체육 사회 과학 수학 중어\n금 : 과학 체육 역사 사회 영어 국어';
         default:
           return 'invalid';
       }
@@ -2092,7 +2092,7 @@ function Fourth_Nogada(a, b) {
         case "조례":
           return '김혜란선생님\nhttps://us04web.zoom.us/j/5415952858?pwd=OUdFeWdCVkZyVzhudmNaVU1CRVZxZz09';
         case "시간표":
-          return '월 : 음악 체육 수학 영어 과학 국어 자율\n화 : 역사 수학 영어 사회 과학 국어 중어\n수 : 영어 수학 사회 스포3 역사\n목 : 과학 정보 정보 국어 수학 사회 체육\n금 : 영어 중어 미술 체육 과학 국어';
+          return '월 : 음악 체육 수학 영어 과학 국어 자율\n화 : 역사 수학 영어 사회 과학 국어 중어\n수 : 영어 수학 사회 스포 역사\n목 : 과학 정보 정보 국어 수학 사회 체육\n금 : 영어 중어 미술 체육 과학 국어';
         default:
           return "invalid";
       }      
