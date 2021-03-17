@@ -16,10 +16,10 @@ client.on("ready", () => {
 
 date = ["월", "화", "수", "목", "금", "토", "일"] //부가 어레이
 function tt(a, b, c) {
-    if (Fourth_Nogada(a, b, c) == "invalid") {
+    /*if (Fourth_Nogada(a, b, c) == "invalid") {
       return "정확한 값을 입력해주세요."
-    }
-    else if(typeof(b) == "string"&& typeof(c) == "undefined"){
+    }*/
+    if(typeof(b) == "string"&& typeof(c) == "undefined"){
       return `${a}반\n${b}\n${Fourth_Nogada(a, b)}`
     }
     else if (First_Nogada(a, b, c) == "invalid") {
