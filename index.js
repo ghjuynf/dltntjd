@@ -1860,7 +1860,7 @@ function Additional_Nogada(a, b, c){
               case "5":
                 return "뒷반과학";
               case "6":
-                return "국어";
+                return "뒷반국어";
               case "7":
                 return "None";
               default:
