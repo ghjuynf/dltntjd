@@ -50,7 +50,7 @@ client.on('message', msg => {
   if (msg.author.bot || !msg.content.startsWith(prefix)) return; 
   var args = msg.content.slice(prefix.length).trim().split(' ');
   var cmd = args.shift(); 
-  msg.channel.send(tt(cmd, args[0], args[1]));
+  msg.channel.send(tt(cmd, args[0], args[1], args));
 });
 
   /*function timeschedule() {
