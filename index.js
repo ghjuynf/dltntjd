@@ -15,30 +15,34 @@ client.on("ready", () => {
 });
 
 date = ["월", "화", "수", "목", "금", "토", "일"] //부가 어레이
-function tt(a, b, c) {
-    /*if (Fourth_Nogada(a, b, c) == "invalid") {
-      return "정확한 값을 입력해주세요."
-    }*/
-    if(typeof(b) == "string"&& typeof(c) == "undefined"){
-      return `${a}반\n${b}\n${Fourth_Nogada(a, b)}`
+function tt(a, b, c, d) {
+    if (d.length == 1) {
+        if (Fourth_Nogada(a, b, c) == "invalid") {
+            return "정확한 값을 입력해주세요."
+        }
+        else {
+            return `${a}반\n${b}\n${Fourth_Nogada(a, b)}`
+        }
     }
-    else if (First_Nogada(a, b, c) == "invalid") {
-        return "정확한 값을 입력해주세요."
-    }
-    else if(First_Nogada(a, b, c) == "자율"){
-      return "자율시간입니다. 자세한건 담임선생님 공지를 따라주세요."
-    }
-    else if(Additional_Nogada(a, b, c) == "doesntexist"){
-      return "시간표 정보가 없습니다."
-    }
-    else if(First_Nogada(a, b, c) == "None"){
-        return "6교시 혹은 7교시 수업이 존재하지 않음"
-    }
-    else if(Third_Nogada(a, b, c) == "Sport"){
-      return "스포츠에요"
-    }
-    else{
-      return `${a}반 ${date[b-1]}요일 ${c}교시 수업\n${First_Nogada(a, b, c)}\n${Second_Nogada(a, b, c)}\n${Third_Nogada(a, b, c)}`
+    if (d.length == 2) {
+        if (First_Nogada(a, b, c) == "invalid") {
+            return "정확한 값을 입력해주세요."
+        }
+        else if(First_Nogada(a, b, c) == "자율"){
+            return "자율시간입니다. 자세한건 담임선생님 공지를 따라주세요."
+        }
+        else if(Additional_Nogada(a, b, c) == "doesntexist"){
+            return "시간표 정보가 없습니다."
+        }
+        else if(First_Nogada(a, b, c) == "None"){
+            return "6교시 혹은 7교시 수업이 존재하지 않음"
+        }
+        else if(Third_Nogada(a, b, c) == "Sport"){
+            return "스포츠에요"
+        }
+        else{
+            return `${a}반 ${date[b-1]}요일 ${c}교시 수업\n${First_Nogada(a, b, c)}\n${Second_Nogada(a, b, c)}\n${Third_Nogada(a, b, c)}`
+        }
     }
 }
 
