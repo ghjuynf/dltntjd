@@ -8,40 +8,57 @@ client.on("ready", () => {
     client.user.setPresence({
       status: "dnd",
       activity: {
-          name: "반 추가하고 싶으신분은 이수성이에요#8029으로 자기반 줌 링크 보내주세여",
+          name: "==help",
           type: "PLAYING"
       }
     })
 });
 
-date = ["월", "화", "수", "목", "금", "토", "일"] //부가 어레이
+function embedSender(title, color, description) {
+  var embed = new Discord.MessageEmbed()
+      .setTitle(title)
+      .setColor(color)
+      .setDescription(description)
+      return embed;
+}
+
+date = ["월", "화", "수", "목", "금"] //부가 어레이
 function tt(a, b, c, d) {
+      if(a == "help"){
+          return embedSender("서해중학교 3학년 시간표 봇 사용 방법입니다", 0x00ff99, "일반적으로 시간표를 사용할땐\n\
+          **==(반) (요일) (교시)로 사용합니다**\n\
+          ex) ==6 1 1 (6반 월요일 1교시) ```6반 월요일 1교시 \n수업 \n정보 \n김혜란선생님 \nhttps:us04web.zoom.us/j/5415952858?pwd=OUdFeWdCVkZyVzhudmNaVU1CRVZxZz09```\n\
+          조례 종례, 또는 반의 시간표 전체를 확인할수도 있습니다\n\
+          **==(반) (조례 or 종례 or 시간표)**\n\
+          ex) ==6 조례 ```6반 조례 \n\이준서선생님 \nhttps://us02web.zoom.us/j/8687258653?pwd=Q0ZzclJUVVRkaGI0Z2x4R3ZrNXdxQT09```\n\
+          ***AND TREMENDOUS THANKS FOR cjddig***");
+    }
     if (d.length == 1) {
         if (Fourth_Nogada(a, b, c) == "invalid") {
-            return "정확한 값을 입력해주세요."
+            return embedSender("정확한 값을 입력해주세요.", 0x00ff99, "");
         }
         else {
-            return `${a}반\n${b}\n${Fourth_Nogada(a, b)}`
+            return embedSender(`${a}반\n${b}\n${Fourth_Nogada(a, b)}`, 0x00ff99, "");
         }
     }
     if (d.length == 2) {
         if (First_Nogada(a, b, c) == "invalid") {
-            return "정확한 값을 입력해주세요."
+            return embedSender("정확한 값을 입력해주세요.", 0x00ff99, "");
         }
         else if(First_Nogada(a, b, c) == "자율"){
-            return "자율시간입니다. 자세한건 담임선생님 공지를 따라주세요."
+            return embedSender("자율시간입니다. 자세한건 담임선생님 공지를 따라주세요.", 0x00ff99, "");
         }
         else if(Additional_Nogada(a, b, c) == "doesntexist"){
-            return "시간표 정보가 없습니다."
+            return embedSender("시간표 정보가 없습니다.", 0x00ff99, "");
         }
         else if(First_Nogada(a, b, c) == "None"){
-            return "6교시 혹은 7교시 수업이 존재하지 않음"
+            return embedSender("6교시 혹은 7교시 수업이 존재하지 않음", 0x00ff99, "");
         }
         else if(Third_Nogada(a, b, c) == "Sport"){
-            return "스포츠에요"
+            return embedSender("스포츠에요", 0x00ff99, "");
         }
         else{
-            return `${a}반 ${date[b-1]}요일 ${c}교시 수업\n${First_Nogada(a, b, c)}\n${Second_Nogada(a, b, c)}\n${Third_Nogada(a, b, c)}`
+            return embedSender(`${a}반 ${date[b-1]}요일 ${c}교시 수업\n`, 0x00ff99, `${First_Nogada(a, b, c)}\n${Second_Nogada(a, b, c)}\n${Third_Nogada(a, b, c)}`);
         }
     }
 }
@@ -2104,4 +2121,5 @@ function Fourth_Nogada(a, b) {
         return 'invalid';
   }
 }
+
 client.login(token);
