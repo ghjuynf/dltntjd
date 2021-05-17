@@ -1983,7 +1983,7 @@ function Third_Nogada(a, b, c){
       case "송혜경선생님":
         return 'https://zoom.us/j/8721927402?pwd=cTJyKzBQUXRMb3owNFU1bkM1VllrUT09';
       case "강지현선생님":
-        return 'https://zoom.us/j/6297632473?pwd=dmI0aEVZc3N1Q29lejVjU1dqTGt0Zz09';
+        return 'https://zoom.us/j/96006787081?pwd=eTQzekpycVhOWkp0aDZsZWxSMVZCUT09';
       case "윤혜진선생님":
         return 'https://zoom.us/j/3553534243?pwd=RkNWSWNKT000d2ZWNHpwZE9sang0QT09';
       case "권민수선생님":
