@@ -1983,7 +1983,7 @@ function Third_Nogada(a, b, c){
       case "송혜경선생님":
         return 'https://zoom.us/j/8721927402?pwd=cTJyKzBQUXRMb3owNFU1bkM1VllrUT09';
       case "강지현선생님":
-        return 'https://zoom.us/j/96006787081?pwd=eTQzekpycVhOWkp0aDZsZWxSMVZCUT09';
+        return 'https://zoom.us/j/6297632473?pwd=dmI0aEVZc3N1Q29lejVjU1dqTGt0Zz09';
       case "윤혜진선생님":
         return 'https://zoom.us/j/3553534243?pwd=RkNWSWNKT000d2ZWNHpwZE9sang0QT09';
       case "권민수선생님":
@@ -2061,7 +2061,7 @@ function Fourth_Nogada(a, b) {
       switch(b){
         case "종례":
         case "조례":
-          return '강지현선생님\nhttps://zoom.us/j/96006787081?pwd=eTQzekpycVhOWkp0aDZsZWxSMVZCUT09';
+          return '강지현선생님\nhttps://zoom.us/j/6297632473?pwd=dmI0aEVZc3N1Q29lejVjU1dqTGt0Zz09';
         case "시간표":
           return '월 : 중어 과학 역사 음악 수학 체육 자율\n화 : 국어 사회 영어 수학 정보 정보 과학\n수 : 미술 영어 국어 스포 수학\n목 : 국어 영어 체육 사회 과학 수학 중어\n금 : 과학 체육 역사 사회 영어 국어';
         default:
